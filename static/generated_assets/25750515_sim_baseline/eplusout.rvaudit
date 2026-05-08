@@ -1,0 +1,13 @@
+ ReadVarsESO
+ processing:/Users/abdulrafeh/Downloads/Final/static/generated_assets/25750515_baseline.rvi
+ input file:/Users/abdulrafeh/Downloads/Final/static/generated_assets/25750515_sim_baseline/eplusout.eso
+ output file:/Users/abdulrafeh/Downloads/Final/static/generated_assets/25750515_sim_baseline/eplusout.csv
+ getting all vars from:/Users/abdulrafeh/Downloads/Final/static/generated_assets/25750515_sim_baseline/eplusout.eso
+  number variables requested for output=           2
+ ReadVars Run Time=00hr 00min  0.00sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:/Users/abdulrafeh/Downloads/Final/static/generated_assets/25750515_baseline.mvi
+ Requested ESO file=/Users/abdulrafeh/Downloads/Final/static/generated_assets/25750515_sim_baseline/eplusout.mtr
+ does not exist.  ReadVarsESO program terminated.
+ ReadVarsESO program terminated.

@@ -1,0 +1,16 @@
+Program Version,EnergyPlus, Version 24.1.0-9d7789a3ac, YMD=2026.04.26 20:32
+1,5,Environment Title[],Latitude[deg],Longitude[deg],Time Zone[],Elevation[m]
+2,8,Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],Hour[],StartMinute[],EndMinute[],DayType
+3,5,Cumulative Day of Simulation[],Month[],Day of Month[],DST Indicator[1=yes 0=no],DayType  ! When Daily Report Variables Requested
+4,2,Cumulative Days of Simulation[],Month[]  ! When Monthly Report Variables Requested
+5,1,Cumulative Days of Simulation[] ! When Run Period Report Variables Requested
+6,1,Calendar Year of Simulation[] ! When Annual Report Variables Requested
+141,11,DYNAMIC_ZONE IDEALLOADS,Zone Ideal Loads Supply Air Total Heating Energy [J] !Annual [Value,Min,Month,Day,Hour,Minute,Max,Month,Day,Hour,Minute]
+190,11,DYNAMIC_ZONE IDEALLOADS,Zone Ideal Loads Supply Air Total Cooling Energy [J] !Annual [Value,Min,Month,Day,Hour,Minute,Max,Month,Day,Hour,Minute]
+End of Data Dictionary
+1,ANNUAL,  51.48,  -0.45,   0.00,  25.30
+6,2017
+141,182794698289.62268,0.0, 3,25,16,45,15549695.050266841, 2, 9, 8,30
+190,4451048532.065526,0.0, 1, 1, 1,15,8032871.610470708, 7,18,17,45
+End of Data
+ Number of Records Written=           2

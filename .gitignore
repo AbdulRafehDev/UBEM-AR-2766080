@@ -1,0 +1,8 @@
+venv/
+*.pt
+*.weights
+*.jpeg
+*.jpg
+*.png
+*.gif
+__pycache__/

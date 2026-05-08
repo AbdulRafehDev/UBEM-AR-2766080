@@ -1,0 +1,13 @@
+flask
+ultralytics
+opencv-python
+numpy
+scipy
+requests
+inference-sdk
+Pillow
+eppy
+osmnx
+torch
+transformers
+python-dotenv

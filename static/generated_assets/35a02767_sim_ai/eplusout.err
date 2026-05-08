@@ -1,0 +1,1507 @@
+Program Version,EnergyPlus, Version 24.1.0-9d7789a3ac, YMD=2026.04.26 18:53,
+   ** Warning ** No Timestep object found.  Number of TimeSteps in Hour defaulted to 4.
+   ** Warning ** GetVertices: Roof/Ceiling is upside down! Tilt angle=[180.0], should be near 0, Surface="ROOF_MAIN", in Zone="DYNAMIC_ZONE".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** GetHTSurfaceData: Surfaces with interface to Ground found but no "Ground Temperatures" were input.
+   **   ~~~   ** Found first in surface=FLOOR_MAIN
+   **   ~~~   ** Defaults, constant throughout the year of (18.0) will be used.
+   ** Warning ** BuildingSurface:Detailed="FLOOR_MAIN", Sun Exposure="SUNEXPOSED".
+   **   ~~~   ** ..This surface is not exposed to External Environment.  Sun exposure has no effect.
+   ** Warning ** GetVertices: Floor is upside down! Tilt angle=[0.0], should be near 180, Surface="FLOOR_MAIN", in Zone="DYNAMIC_ZONE".
+   **   ~~~   ** Automatic fix is attempted.
+   ** Warning ** Indicated Zone Volume <= 0.0 for Zone=DYNAMIC_ZONE
+   **   ~~~   ** The calculated Zone Volume was=-1043.13
+   **   ~~~   ** The simulation will continue with the Zone Volume set to 10.0 m3. 
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_2, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1238.3237)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1238.3237)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1238.4286)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1366.6876)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1366.6544)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1315.8554)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1283.5034)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1269.3779)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1261.5137)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1152.4396)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1152.4999)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=             90.5195)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=             90.4344)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1238.3237)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=             90.4344)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=            323.9942)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1238.3509)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1271.9850)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1366.6787)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1353.3640)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1307.3919)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1279.8098)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1267.3213)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1232.9756)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=           1152.4565)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=            874.6425)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=             90.4971)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_1
+   **   ~~~   **    (Dot Product indicator=             66.7744)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1238.3237)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_3, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1205.5527)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1205.5527)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1205.1314)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           2016.4131)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           2016.1327)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1984.3048)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1903.7495)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1816.6702)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1817.5898)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1481.3906)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1480.5571)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1238.4813)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1238.3237)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1238.4813)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=            914.3311)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=            315.4288)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1205.4464)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1417.3929)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           2016.3424)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           2007.8144)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1963.2341)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1880.9661)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1816.9087)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1729.6206)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1481.1746)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1417.2183)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_2
+   **   ~~~   **    (Dot Product indicator=           1238.4471)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1205.6576)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1205.5527)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_10, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=             83.7652)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=             83.7652)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=             83.6780)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1117.5542)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1117.6164)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1205.6576)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1117.6164)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1205.6282)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=            890.1326)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=              5.3605)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=             83.7413)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=            354.1822)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1117.5706)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_3
+   **   ~~~   **    (Dot Product indicator=           1140.6503)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=              2.9730)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_5, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             84.0282)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             84.0282)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             83.9819)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             80.6743)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             72.3261)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             63.3042)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             63.3623)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             28.5406)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             28.0930)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=              3.0200)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=              2.9730)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=              3.0200)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             21.9849)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             84.0164)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             83.1175)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             78.4907)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             69.9656)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             63.3192)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             54.2509)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             28.4237)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=             21.5327)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_4
+   **   ~~~   **    (Dot Product indicator=              3.0085)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            895.3778)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            895.4109)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             84.1292)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             84.0282)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_6, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             33.2808)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             33.2808)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             54.4768)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             63.7332)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             68.8878)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            140.3471)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            140.3166)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            836.0679)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            836.1301)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            895.3778)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            836.1301)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            895.3851)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            683.1477)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             84.1030)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             62.0439)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=              8.7072)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             38.8258)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             56.8973)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             65.0813)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=             87.5844)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            140.3384)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            322.3535)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            836.0843)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_5
+   **   ~~~   **    (Dot Product indicator=            851.6309)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             31.6096)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             82.4087)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             82.6891)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             33.2344)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             33.2808)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_7, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              1.2983)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              1.2983)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              4.5997)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              8.1701)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              8.1077)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             21.8994)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             21.6931)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             31.6236)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             31.6096)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             31.6236)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             44.9006)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             82.4822)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             69.7495)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             33.2464)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             24.5733)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              0.3393)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              2.1619)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              5.5339)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=              8.1539)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             11.7164)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             21.8454)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             24.2914)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_6
+   **   ~~~   **    (Dot Product indicator=             31.6197)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_1, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             18.8521)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             18.8521)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             50.6799)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             19.1868)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             22.4944)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              1.2983)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_8, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              1.7415)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              1.7415)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              3.8144)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              0.9869)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              9.7718)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 2 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             18.8521)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              9.7718)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WINDOW_1, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             10.3877)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             27.1796)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             42.4399)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             20.0521)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=             16.9487)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              0.9586)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              0.4555)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              2.2839)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              3.0746)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              3.2856)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_7
+   **   ~~~   **    (Dot Product indicator=              2.6359)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_2, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=             19.6958)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=             19.6958)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              5.9510)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=             14.2993)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              5.0429)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              1.7415)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_9, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              0.4817)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              0.4817)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=             19.6958)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 5 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              0.4817)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=             16.0995)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              8.1351)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=             11.8774)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              4.1791)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              1.2858)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_8
+   **   ~~~   **    (Dot Product indicator=              0.1261)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_2, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              9.9064)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              9.9064)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              2.2577)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=             11.2796)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              6.1250)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              2.5546)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              0.4817)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              9.9064)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 7 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              0.4817)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              7.9051)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              4.6180)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              9.9309)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              5.1909)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              2.0123)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_9
+   **   ~~~   **    (Dot Product indicator=              0.3558)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             51.8787)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=            160.9528)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=            160.0333)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             53.8456)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             53.7875)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_11, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             29.6131)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             29.6131)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_13, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             30.4751)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             51.7977)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             51.8787)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             51.7977)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             80.4167)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=            160.7127)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=            132.2497)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             53.8301)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             35.0911)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=              7.7485)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             29.8384)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             36.0541)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_10
+   **   ~~~   **    (Dot Product indicator=             51.8183)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_2, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             23.2286)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             23.2286)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             23.3158)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             58.1375)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             58.1680)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             44.3763)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             35.5914)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             31.7524)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             29.6131)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             23.2286)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 5 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             29.6131)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             23.2514)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             32.4262)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             58.1454)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             54.5597)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             42.0781)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             34.5875)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             31.1929)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_11
+   **   ~~~   **    (Dot Product indicator=             21.8651)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_1, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            207.6773)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=           1269.6577)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=           1270.4912)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            236.6151)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            237.0627)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_13, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            207.6030)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_14, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            207.6030)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            207.6773)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            207.6030)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            485.5318)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=           1269.8800)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            999.9810)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            236.7289)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=             55.0283)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_13, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=             54.3190)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_14, is in front of receiving surface=WALL_12
+   **   ~~~   **    (Dot Product indicator=            207.6164)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_2, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            224.4822)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            224.4822)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            224.4199)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            249.4928)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_6, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            249.4307)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_7, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            239.5001)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_8, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            233.1779)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_9, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            230.4221)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_10, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            228.8908)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_11, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            207.5681)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_12, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            207.6030)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            224.4822)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            207.6030)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=             45.7429)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            224.4658)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            230.9797)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_5, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            249.4765)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_6, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            246.8326)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_7, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            237.8462)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_8, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            232.4573)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_9, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            230.0216)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_10, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            223.3119)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_11, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            207.5775)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_12, is in front of receiving surface=WALL_13
+   **   ~~~   **    (Dot Product indicator=            153.2856)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 3 of back surface=WALL_1, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             90.4344)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_2, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             90.4344)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_3, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             90.5920)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_4, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=              2.5508)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WALL_5, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=              2.5979)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 2 of back surface=FLOOR_MAIN, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             90.4344)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 10 of back surface=ROOF_MAIN, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=              2.5979)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_1, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             23.6611)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_2, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             90.4760)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_3, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=             67.5563)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ** Severe  ** Problem in interior solar distribution calculation (CHKBKS)
+   **   ~~~   **    Solar Distribution = FullInteriorExterior will not work in Zone=DYNAMIC_ZONE
+   **   ~~~   **    because one or more of vertices, such as Vertex 1 of back surface=WINDOW_4, is in front of receiving surface=WALL_14
+   **   ~~~   **    (Dot Product indicator=              2.5629)
+   **   ~~~   **    Check surface geometry; if OK, use Solar Distribution = FullExterior instead. Use Output:Diagnostics, DisplayExtraWarnings; for more details.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 6 Warning; 296 Severe Errors; Elapsed Time=00hr 00min  0.82sec

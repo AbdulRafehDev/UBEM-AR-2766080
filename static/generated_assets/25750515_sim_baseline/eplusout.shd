@@ -1,0 +1,102 @@
+Shadowing Combinations
+..Solar Distribution=FullInteriorAndExterior
+..In the following, only the first 10 reference surfaces will be shown.
+..But all surfaces are used in the calculations.
+==================================
+Surface=WALL_1 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=WALL_2
+..Surface=WALL_3
+..Surface=WALL_4
+Number of back surfaces=8
+...Surface=WALL_2
+...Surface=WALL_3
+...Surface=WALL_4
+...Surface=FLOOR_MAIN
+...Surface=ROOF_MAIN
+...Surface=WINDOW_2
+...Surface=WINDOW_3
+...Surface=WINDOW_4
+Number of receiving sub surfaces=1
+....Surface=WINDOW_1
+==================================
+Surface=WINDOW_1 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=WALL_2 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=WALL_1
+..Surface=WALL_3
+..Surface=WALL_4
+Number of back surfaces=8
+...Surface=WALL_1
+...Surface=WALL_3
+...Surface=WALL_4
+...Surface=FLOOR_MAIN
+...Surface=ROOF_MAIN
+...Surface=WINDOW_1
+...Surface=WINDOW_3
+...Surface=WINDOW_4
+Number of receiving sub surfaces=1
+....Surface=WINDOW_2
+==================================
+Surface=WINDOW_2 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=WALL_3 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=WALL_1
+..Surface=WALL_2
+..Surface=WALL_4
+Number of back surfaces=8
+...Surface=WALL_1
+...Surface=WALL_2
+...Surface=WALL_4
+...Surface=FLOOR_MAIN
+...Surface=ROOF_MAIN
+...Surface=WINDOW_1
+...Surface=WINDOW_2
+...Surface=WINDOW_4
+Number of receiving sub surfaces=1
+....Surface=WINDOW_3
+==================================
+Surface=WINDOW_3 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=WALL_4 is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=3
+..Surface=WALL_1
+..Surface=WALL_2
+..Surface=WALL_3
+Number of back surfaces=8
+...Surface=WALL_1
+...Surface=WALL_2
+...Surface=WALL_3
+...Surface=FLOOR_MAIN
+...Surface=ROOF_MAIN
+...Surface=WINDOW_1
+...Surface=WINDOW_2
+...Surface=WINDOW_3
+Number of receiving sub surfaces=1
+....Surface=WINDOW_4
+==================================
+Surface=WINDOW_4 is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=FLOOR_MAIN is not used as Receiving Surface in calculations.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0
+==================================
+Surface=ROOF_MAIN is used as Receiving Surface in calculations and is convex.
+Number of general casting surfaces=0
+Number of back surfaces=0
+Number of receiving sub surfaces=0

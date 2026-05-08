@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WWR Inference</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<main class="container">
+    <h1>Facade and Window WWR Inference</h1>
+
+    <div class="main-form">
+        <label for="addressInput">Address — triggers full energy simulation pipeline</label>
+        <input id="addressInput" type="text" placeholder="e.g. 10 Downing Street, London">
+
+        <div class="btn-row">
+            <button class="btn" id="runAddressBtn" type="button">Run Address Pipeline</button>
+            <button class="btn btn-outline" id="openUploadModalBtn" type="button"> Upload Images</button>
+        </div>
+
+        <p class="hint">
+            Enter an <strong>address</strong> and click Run to fetch Street View → crop → AI WWR → EnergyPlus simulation.<br>
+            Click <strong>Upload Images</strong> to select a building type and upload photos (with optional address for the full pipeline).
+        </p>
+    </div>
+
+    <div id="errorMsg" class="error" style="display:none"></div>
+
+    <!-- ═══════════════════════════════════════════
+         BUILDING TYPE + UPLOAD MODAL
+    ════════════════════════════════════════════ -->
+    <div class="overlay" id="uploadOverlay">
+        <div class="modal">
+            <button class="modal-close" id="closeUploadModal">×</button>
+            <div class="modal-title">️ Configure Building Analysis</div>
+
+            <p style="margin:0 0 10px;font-weight:600;font-size:0.95rem;">1. Select Building Type</p>
+            <div class="building-types">
+                <div class="building-type-card" data-type="mid-terrace" data-max="2">
+                    <div class="icon"></div>
+                    <div class="name">Mid Terrace</div>
+                    <div class="limit">2 Photos Max</div>
+                </div>
+                <div class="building-type-card selected" data-type="end-semi" data-max="3">
+                    <div class="icon"></div>
+                    <div class="name">End / Semi-Detached</div>
+                    <div class="limit">3 Photos Max</div>
+                </div>
+                <div class="building-type-card" data-type="detached" data-max="4">
+                    <div class="icon"></div>
+                    <div class="name">Detached</div>
+                    <div class="limit">4 Photos Max</div>
+                </div>
+            </div>
+
+            <p style="margin:0 0 10px;font-weight:600;font-size:0.95rem;">
+                2. Upload Images
+                <span class="file-count-badge" id="maxFileBadge">Max 3 files</span>
+            </p>
+
+            <div class="drop-zone" id="dropZone">
+                <div class="drop-icon">️</div>
+                <p class="drop-main">Click to browse or drag images here</p>
+                <p style="opacity:0.7">Hold Ctrl/Cmd to select multiple files.</p>
+                <input type="file" id="hiddenFileInput" accept="image/*" multiple style="display:none">
+            </div>
+
+            <div id="selectedFilesInfo" style="font-size:0.88rem;color:#555;margin-bottom:14px;display:none"></div>
+
+            <div class="btn-row">
+                <button class="btn btn-secondary" id="cancelUploadBtn" type="button">Cancel</button>
+                <button class="btn btn-success" id="startAnalysisBtn" type="button" disabled> Start AI Analysis</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         CROP MODAL
+    ════════════════════════════════════════════ -->
+    <div class="overlay" id="cropOverlay">
+        <div class="modal crop-modal">
+            <button class="modal-close" id="closeCropModal">×</button>
+            <div class="modal-title">️ Crop Image</div>
+
+            <div class="crop-nav">
+                <span id="cropCounter">Image 1 of 1</span>
+                <span id="cropCoordsLabel" style="font-size:0.82rem;color:#888"></span>
+            </div>
+
+            <div class="crop-canvas-wrap" id="cropCanvasWrap">
+                <canvas id="cropCanvas"></canvas>
+            </div>
+
+            <p class="crop-hint">Click and drag to select the area you want to keep. You can redraw at any time.</p>
+
+            <div class="btn-row">
+                <button class="btn btn-secondary" id="resetCropBtn" type="button">↺ Reset</button>
+                <button class="btn" id="confirmCropBtn" type="button">Confirm &amp; Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         SPINNER
+    ════════════════════════════════════════════ -->
+    <div class="spinner-overlay" id="spinnerOverlay">
+        <div class="spinner"></div>
+        <div class="spinner-label" id="spinnerLabel">Running analysis…</div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toastMsg"></div>
+
+    <!-- ═══════════════════════════════════════════
+    ════════════════════════════════════════════ -->
+    <div id="resultsArea">
+
+        {# ── GENERALIZATION PIPELINE RESULTS (server-rendered) ── #}
+        {% if generalization_result %}
+        <div class="gen-section" id="genSection">
+            <div class="gen-header">
+                <h2>Energy Analysis — {{ generalization_result.address }}</h2>
+            </div>
+            <div class="gen-body">
+                {% if not generalization_result.success %}
+                <div class="gen-error">Pipeline failed: {{ generalization_result.error }}</div>
+                {% else %}
+                {% set pairs = generalization_result.image_pairs if generalization_result.image_pairs else [] %}
+                {% if not pairs and generalization_result.image_url %}
+                    {% set pairs = [{'image_url': generalization_result.image_url, 'annotated_url': generalization_result.annotated_url}] %}
+                {% endif %}
+
+                {% for pair in pairs %}
+                <div class="gen-images" style="margin-bottom: {% if not loop.last %}16px{% else %}20px{% endif %};">
+                    <figure>
+                        <img src="{{ url_for('static', filename=pair.image_url) }}" alt="Original {{ loop.index }}">
+                        <figcaption>Original{% if pairs|length > 1 %} (Image {{ loop.index }}){% endif %}</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="{{ url_for('static', filename=pair.annotated_url) }}" alt="Annotated {{ loop.index }}">
+                        <figcaption>AI Detections{% if pairs|length > 1 %} (Image {{ loop.index }}){% endif %}</figcaption>
+                    </figure>
+                </div>
+                {% endfor %}
+                {% if generalization_result.class_counts %}
+                <p class="detections">Detections: {{ generalization_result.class_counts }}</p>
+                {% endif %}
+                <div class="wwr-row">
+                    <div class="wwr-badge ai">
+                        <span class="label">AI-Predicted WWR</span>
+                        <span class="value">{{ generalization_result.wwr_ai }}%</span>
+                        <span class="sublabel">From facade analysis</span>
+                    </div>
+                    <div class="wwr-badge baseline">
+                        <span class="label">Baseline WWR</span>
+                        <span class="value">{{ generalization_result.wwr_baseline }}%</span>
+                        <span class="sublabel">Industry assumption</span>
+                    </div>
+                </div>
+                {% set e_ai = generalization_result.energy_ai %}
+                {% set e_base = generalization_result.energy_baseline %}
+                <div class="energy-section">
+                    <h3>Annual Energy Consumption (EnergyPlus Simulation)</h3>
+                    <div class="energy-grid">
+                        <div class="energy-card ai">
+                            <div class="card-title">AI WWR Model</div>
+                            <div class="energy-row"><span class="ekey">Heating</span><span class="eval">{{ e_ai.heating_kwh | round(1) }} kWh</span></div>
+                            <div class="energy-row"><span class="ekey">Cooling</span><span class="eval">{{ e_ai.cooling_kwh | round(1) }} kWh</span></div>
+                            <div class="energy-row"><span class="ekey">Total</span><span class="eval">{{ e_ai.total_kwh | round(1) }} kWh</span></div>
+                        </div>
+                        <div class="energy-card baseline">
+                            <div class="card-title">Baseline 20% Model</div>
+                            <div class="energy-row"><span class="ekey">Heating</span><span class="eval">{{ e_base.heating_kwh | round(1) }} kWh</span></div>
+                            <div class="energy-row"><span class="ekey">Cooling</span><span class="eval">{{ e_base.cooling_kwh | round(1) }} kWh</span></div>
+                            <div class="energy-row"><span class="ekey">Total</span><span class="eval">{{ e_base.total_kwh | round(1) }} kWh</span></div>
+                        </div>
+                    </div>
+                    {% set delta = e_ai.total_kwh - e_base.total_kwh %}
+                    {% set delta_pct = (delta / e_base.total_kwh) * 100 if e_base.total_kwh != 0 else 0 %}
+                    <div class="delta-box {% if delta > 0 %}negative{% endif %}">
+                        <div class="delta-label">AI model vs 20% baseline — total energy difference</div>
+                        <div class="delta-value">
+                            {% if delta < 0 %}↓ {{ (delta | abs) | round(1) }} kWh ({{ delta_pct | abs | round(2) }}% less)
+                            {% elif delta > 0 %}↑ {{ delta | round(1) }} kWh ({{ delta_pct | round(2) }}% more)
+                            {% else %}No difference{% endif %}
+                        </div>
+                        <div class="delta-desc">
+                            {% if delta < 0 %}The AI-predicted WWR results in lower simulated energy use than the 20% assumption.
+                            {% elif delta > 0 %}The AI-predicted WWR results in higher simulated energy use than the 20% assumption.
+                            {% else %}Both models predict identical energy consumption.{% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        {# ── STANDARD INFERENCE RESULTS ── #}
+        {% if results %}
+        <div class="inference-results" id="inferenceTable">
+            {% for row in results %}
+            <div class="inference-card">
+                <div class="inference-card-header">
+                    <span class="fname">{{ row.name }}</span>
+                    <span class="wwr-val">WWR: {{ row.wwr }}</span>
+                    <span class="det-val">Detections: {{ row.class_counts }}</span>
+                </div>
+                <div class="inference-img-pair">
+                    <div class="img-cell">
+                        <div class="img-label">Original</div>
+                        <img src="{{ row.original_url }}" alt="Original {{ row.name }}">
+                    </div>
+                    <div class="img-cell">
+                        <div class="img-label">AI Annotated</div>
+                        <img src="{{ row.annotated_url }}" alt="Annotated {{ row.name }}">
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- JS-rendered results go here -->
+        <div id="jsGenResults"></div>
+        <div id="jsInferenceResults"></div>
+    </div>
+</main>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
